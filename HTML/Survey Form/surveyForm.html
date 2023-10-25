@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+    <body class="bg-primary text-white">
+        <div class="myForm container-fluid">
+            <p class="heading">Survey Form</p>
+            <div class="form card ">
+                <form id="surveyForm"> 
+                    <div class="row">
+                        <div class="col-6 ">
+                            <label for="firstname" class="mb-3">First Name:</label>
+                            <input type="text" class="form-control"id="firstName" >
+                        </div>
+
+                        <div class="col-6">
+                            <label for="lastname" class="mb-3">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </div>
+                        <label for="dob" class="mb-3 mt-2">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" class="form-control">
+
+                        <label for="country" class="mb-3 mt-2">Country:</label>
+                        <button class=" btn dropdown-toggle" id="country" type="button" data-bs-toggle="dropdown">Select Country</button>
+                          <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">India</a></li>
+                            <li><a class="dropdown-item" href="#">USA</a></li>
+                            <li><a class="dropdown-item" href="#">Canada</a></li>
+                            <li><a class="dropdown-item" href="#">UK</a></li>
+                          </ul> <br>
+
+                          <label class="">Gender:</label>
+                          <input type="radio" id="male" name="gender" value="Male" required>
+                          <label for="male">Male</label>
+                          <input type="radio" id="female" name="gender" value="Female" required>
+                          <label for="female">Female</label> <br>
+
+                          <label for="profession" class="mb-3 mt-2">Profession:</label>
+                          <input type="text" class=" form-control"  id="profession" name="profession" required> <br>
+
+                          <label for="email" class="mb-3">Email:</label>
+                          <input type="email" id="email" name="email" class="form-control" required> <br>
+
+                          <label for="mobile" class="mb-3">Mobile Number:</label>
+                          <input type="tel" id="mobile" class="form-control" name="mobile" required> <br>
+
+                          <button class=" btn btn-primary p-2 text-center" id="submitBtn">SUBMIT</button>
+                          <button class="btn btn-primary p-2 text-center" id="resetBtn">RESET</button>
+                
+                </form>
+            </div>
+            <p class="mt-4 text-center">&copy 2023 Customer Survey Form. All Rights Reserved | Design by Mansi Chaudhari</p>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
